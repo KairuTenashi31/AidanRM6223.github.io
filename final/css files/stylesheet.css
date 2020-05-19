@@ -19,10 +19,7 @@
     font-family: customFont2;
     src: url(custom-fonts/FINALOLD.TTF)
 }
-@keyframes loading-elements {
-    from {display: block;}
-    to {display: none;}
-}
+
 .aidans-table {
     border-radius: 15px;
     background-color: #00a4ef;
