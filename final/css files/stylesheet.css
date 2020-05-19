@@ -19,10 +19,7 @@
     font-family: customFont2;
     src: url(custom-fonts/FINALOLD.TTF)
 }
-@keyframes loading-elements {
-    from {display: block;}
-    to {display: none;}
-}
+
 .aidans-table {
     border-radius: 15px;
     background-color: #00a4ef;
@@ -35,7 +32,7 @@
 
 .grad1 {
     background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+    background-image: linear-gradient(#42A5F5,#1E88E5,#42A5F5); /* Standard syntax (must be last) */
 }
 .dhruvs-section {
     font-size: large;
