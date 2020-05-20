@@ -29,7 +29,7 @@
             
         </style>
     </head>
-    <body>
+    <body onload="loadPage()">
         
         <img src="images/titleimage.png" style="display: block;
         margin-left: auto;
@@ -50,7 +50,8 @@
             </li>
         </ul>
         <div class="tab-content">
-            <div style="text-align: center;" class="homepage tab-pane container active" id="home">
+            <div id="loader" class="spinner-border text-success"></div>
+            <div style="text-align: center; display: none;" class="homepage tab-pane container active" id="home">
                 <h2 style="font-family: customFont2;">Welcome to our class webpage!</h2>
                 <p>The following are examples of Grids in Bootstrap:</p>
                 <div class="table-striped row homepage-grid">
@@ -71,7 +72,6 @@
                 <div class="table-striped row homepage-grid">
                     <div class="col fa-border">1</div>
                 </div>
-                <div id="homespinner" class="spinner-border text-success"></div>
             </div>
 
             <div class="aidans-section tab-pane container fade" id="aidans-section">
@@ -81,9 +81,9 @@
                   </div>
                 <p style="font-family: customFont1;">Hello. Welcome to our website!</p>
                 <p style="font-family: customFont1;">This is a <strong>paragraph!</strong> </p>
-                <img id="aidanImage1" src="images/Aidan's Picture.jpg" alt="Aidan" style="display: inline; width: 22.5%">
+                <img id="aidanImage1" src="images/Aidan's Picture.jpg" alt="Aidan" style="display: inline;">
                 
-                <img id="aidanImage2" src="images/Sonic Movie Meme.jpg" alt="Uh...Meow?" style="display: inline; width: 40%;">       
+                <img id="aidanImage2" src="images/Sonic Movie Meme.jpg" alt="Uh...Meow?" style="display: inline;">       
                 <table class="aidans-table">
                     <tr>
                         <th>First Name</th>
@@ -112,7 +112,7 @@
                     <ol>
                         <li>Flying Battery Zone (Sonic Mania ver.)</li>
                         <li>Stardust Speedway Bad Future (JP)</li>
-                        <ul>- I even made my own remix of it!<audio controls><source src="Aidan's Remix.mp3" type="audio/mpeg"><p>AUDIO NOT SUPPORTED</p></audio></ul>
+                        <ul>- I even made my own remix of it!<br><audio controls><source src="Aidan's Remix.mp3" type="audio/mpeg"><p>AUDIO NOT SUPPORTED</p></audio></ul>
                         <li>Chemical Plant Zone</li>
                     </ol>
                 <strong>His favorite TV shows:</strong>
@@ -138,6 +138,7 @@
                     <a class="dropdown-item" href="#">Link 1</a>
                     <a class="dropdown-item" href="#">Link 2</a>
                     <a class="dropdown-item" href="#dhruv-ul">Link 3</a>
+                    </div>
                 </li>
                 <p>I am very much happy to type in this paragraph. Writing and critical reading 
                 is my favorite subject. I love to write about topics such as sports, technology, and cuture.</p>
@@ -167,6 +168,7 @@
                   <a class="dropdown-item" href="#dhruv-ol">Link 1</a>
                   <a class="dropdown-item" href="#dhruv-ol">Link 2</a>
                   <a class="dropdown-item" href="#dhruv-ul">Link 3</a>
+                </div>
             </li>
         <p>I am very much happy to type in this paragraph. Writing and critical reading 
             is my favorite subject. I love to write about topics such as sports, technology, and cuture.</p>
@@ -203,8 +205,8 @@
                         <li>ice</li>
                     </ul> 
                 
+                
                 </table>
-            </div>
             <div class="tab-pane container fade" id="connors-section">
                 <!--Connor's Section-->
                 <ul class="nav nav-tabs justify-content-center">
