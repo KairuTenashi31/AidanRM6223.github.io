@@ -27,7 +27,7 @@
                 border-radius: 20px;
             }
 
-            ul {
+            .dhruvs-section ul {
                  list-style-type: none;
                  margin: 0;
                  padding: 0;
@@ -36,11 +36,11 @@
                                     ;
             }
 
-            li {
+            .dhruvs-section li {
                 float: right;
             }
 
-            li a {
+            .dhruvs-section li a {
                 display: block;
                  color: white;
                  text-align: center;
@@ -48,7 +48,7 @@
                 text-decoration: none;
             }
 
-            li a:hover {
+            .dhruvs-section li a:hover {
                 background-color: #111;
             }
             
@@ -62,7 +62,7 @@
         <!--The Nav Bar-->
         <ul class="nav nav-tabs justify-content-center">
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#home">Home</a>
+                <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#aidans-section">Section 1</a>
@@ -74,16 +74,15 @@
             <a class="nav-link" data-toggle="tab" href="#connors-section">Section 3</a>
             </li>
         </ul>
-        <ul>
-            
-            <li><a href="#news">News</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#about">About</a></li>
-          </ul>
         <div class="tab-content">
-            <div id="loader" class="spinner-border text-success"></div>
-            <div style="text-align: center; display: none;" class="homepage tab-pane container active" id="home">
+            <div id="loader" style="align-self: center; display: block; margin: auto;" class="spinner-border text-success"></div>
+            <div style="text-align: center; visibility: hidden;" class="homepage tab-pane container active" id="home">
                 <h2 style="font-family: customFont2;">Welcome to our class webpage!</h2>
+                <ul class="nav nav-pills justify-content-center">
+                    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#news">News</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#about">About</a></li>
+                </ul>
                 <p>The following are examples of Grids in Bootstrap:</p>
                 <div class="table-striped row homepage-grid">
                     <div class="col fa-border">1</div>
@@ -112,9 +111,9 @@
                   </div>
                 <p style="font-family: customFont1;">Hello. Welcome to our website!</p>
                 <p style="font-family: customFont1;">This is a <strong>paragraph!</strong> </p>
-                <img id="aidanImage1" src="images/Aidan's Picture.jpg" alt="Aidan" style="display: inline;">
+                <img id="aidanImage1" src="images/Aidan's Picture.jpg" alt="Aidan" style="width:22.5%">
                 
-                <img id="aidanImage2" src="images/Sonic Movie Meme.jpg" alt="Uh...Meow?" style="display: inline;">       
+                <img id="aidanImage2" src="images/Sonic Movie Meme.jpg" alt="Uh...Meow?" style="width:22.5%;">       
                 <table class="aidans-table">
                     <tr>
                         <th>First Name</th>
@@ -184,11 +183,12 @@
                     <img src="images/dhruvvermaa_20191117_5.png" alt="temple view" width="500" height="600">
                 </div>
                 <table>
-                <ol> 
+                    <ol> 
                         <li class="interests">computer</li>
                         <li>phone</li>
                         <li>game</li>
                     </ol>
+                </table>
         <h1>hello welcome to Dhruv's section</h1>
             <h2>part 2</h2>
             <li class="nav-item dropdown">
@@ -197,7 +197,7 @@
                 </a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#dhruv-ol">Link 1</a>
-                  <a class="dropdown-item" href="#dhruv-ol">Link 2</a>
+                  <a class="dropdown-item" href="#dhruv-ol2">Link 2</a>
                   <a class="dropdown-item" href="#dhruv-ul">Link 3</a>
                 </div>
             </li>
@@ -214,13 +214,13 @@
                 <img src="images/dhruvvermaa_20191117_5.png" alt="temple view" width="500" height="600">
             </div>
             <table>
-            <ol id="dhruv-ol"> 
+                <ol id="dhruv-ol"> 
                     <li class="interests">computer</li>
                     <li>phone</li>
                     <li>game</li>
                 </ol>
             
-                <ol id="dhruv-ol">
+                <ol id="dhruv-ol2">
                     <li class="interests">name</li>
                     <li>number</li>
                 </ol>  
@@ -238,6 +238,7 @@
                 
                 
                 </table>
+            
             <div class="tab-pane container fade" id="connors-section">
                 <!--Connor's Section-->
                 <ul class="nav nav-tabs justify-content-center">

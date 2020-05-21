@@ -3,6 +3,11 @@
     background-image: repeating-linear-gradient(#4285f4, #00a4ef, #4285f4);
     border-radius: 15px;
     font-family: customFont1;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
 } 
 .aidans-section p{
     font-family: customFont1;
@@ -21,7 +26,18 @@
 }
 
 #loader {
-    text-align: center;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    
+    width: 150px;
+    height: 150px;
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    border-bottom: 5px solid #3498db;
+    width: 50px;
+    height: 50px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
 }
@@ -39,7 +55,7 @@
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 1s;
     animation-name: animatebottom;
-    animation-duration: 1s
+    animation-duration: 1s;
   }
   
   @-webkit-keyframes animatebottom {

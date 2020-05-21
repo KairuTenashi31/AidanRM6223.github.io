@@ -1,9 +1,9 @@
+
 var loadTime;
 function loadPage() {
-    loadTime = setTimeout(showPage, 3000);
+  loadTime = setTimeout(showPage, 3000);
 }
 function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("home").style.display = "block";
-  }
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("home").style.visibility = "visible";
 }
