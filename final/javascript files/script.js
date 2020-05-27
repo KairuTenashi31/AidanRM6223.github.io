@@ -11,19 +11,18 @@ function showPage() {
 //Connors Section
 var num1 = 0;
 var num2 = 0;
-let numbers = [0,0,0]
-var loopAmount = 0;
+var numbers = [0,0,0] //an array for later combination
+var loopAmount = 0; //amount of looping
 
-function combine(){
+function combine(){ //combines the two values from the first two spots in the array
     numbers[0] = document.getElementById("NUM3").value;
     numbers[1] = document.getElementById("NUM4").value;
 
     numbers[2] = numbers[0] + numbers[1];
-    var goal = numbers[0] + numbers[1];
-    document.getElementById("NUMADD").innerHTML = goal;
+    document.getElementById("NUMADD").innerHTML = numbers[2];
 }
 
-function larger(){
+function larger(){ //compares which is larger
   num1 = document.getElementById("NUM1").value;
   num2 = document.getElementById("NUM2").value;
 
@@ -39,7 +38,7 @@ function larger(){
 
 }
 
-function spinnn(){
+function spinnn(){ //loops the multiplication until the value is completed
   loopAmount = document.getElementById("NUM5").value;
     var temp = 1;
     while(loopAmount != 0){
