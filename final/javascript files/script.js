@@ -19,7 +19,8 @@ function combine(){
     numbers[1] = document.getElementById("NUM4").value;
 
     numbers[2] = numbers[0] + numbers[1];
-    document.getElementById("NUMADD").innerHTML = numbers[2];
+    var goal = numbers[0] + numbers[1];
+    document.getElementById("NUMADD").innerHTML = goal;
 }
 
 function larger(){
