@@ -18,7 +18,7 @@ function combine(){ //combines the two values from the first two spots in the ar
     numbers[0] = document.getElementById("NUM3").value;
     numbers[1] = document.getElementById("NUM4").value;
 
-    numbers[2] = numbers[0] + numbers[1];
+    numbers[2] = (numbers[0]*1+numbers[1]*1);
     document.getElementById("NUMADD").innerHTML = numbers[2];
 }
 
@@ -33,7 +33,7 @@ function larger(){ //compares which is larger
       document.getElementById("NUMSIZE").innerHTML = num2;
     }
     else{
-      document.getElementById("NUMSIZE").innerHTML = 34404;
+      document.getElementById("NUMSIZE").innerHTML = num1;
     }
 
 }
