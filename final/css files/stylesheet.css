@@ -16,6 +16,7 @@
     background-color: hsl(221, 44%, 41%); 
     color: white;
 }
+
 @font-face {
     font-family: customFont1;
     src: url(custom-fonts/Komika/KOMTXKBI.ttf)
@@ -29,7 +30,6 @@
     align-items: center;
     left: 50%;
     top: 50%;
-    
     width: 150px;
     height: 150px;
     border: 5px solid #f3f3f3;
@@ -72,7 +72,7 @@
     background-color: #00a4ef;
     color: white;
     padding: 20px;
-    width: 200px;
+    width: 20px;
     height: 150px;  
 }
 
@@ -83,14 +83,11 @@
 }
 .dhruvs-section {
     font-size: large;
-    
 }
 .dhruvs-section h1 {
     color: white;
     text-align: center;
 }
-
-
 .dhruvs-section ol {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -98,12 +95,58 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
-.dhurv-section h2 {
+.dhruvs-section h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 24px;
 }
+.dhruvs-section li {
+    text-overflow: initial;
+}
+/*The following is all for a dropdown button in Dhruv's section, adapted from W3schools*/
 
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
 
+  /* Dropdown Content (Hidden by Default) */
+  .dhruv-dropcontent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dhruv-dropcontent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dhruv-dropcontent a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dhruv-dropcontent container when the user clicks on the dropdown button) */
+  .show {display:block;}
 
 
 
@@ -131,8 +174,8 @@ h5:active{
 }
 
 .imageRotate{
-    width:200px;
-    height:200px;
+    width:20px;
+    height:20px;
     transform:rotate(35deg);
 }
 
