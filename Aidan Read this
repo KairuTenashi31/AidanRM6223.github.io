@@ -1,0 +1,6 @@
+if you wanna connect to your Home wifi
+go to cmd in your search using your pc
+type this in your cmd "netsh wlan show profile (Insert your Wifi/Network's name) key=clear
+then you can see the wifi password from it
+i hope this helps
+-Kairu
